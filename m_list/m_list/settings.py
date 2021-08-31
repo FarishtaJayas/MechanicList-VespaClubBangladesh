@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-=p!5x*@9zhwq0iro$9xy@s&bdk6&@pe)_&-h-i)cviuzp=i!p4'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -79,12 +79,12 @@ WSGI_APPLICATION = 'm_list.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
+#secret key insert here
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'CLIENT': {
-            "host": "mongodb+srv://Farishta:Qo3GbbvvuRqQMdTW@vespaclub.gtp3c.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+            "host": "",
             "name": "mechanics",
             "authMechanism":"SCRAM-SHA-1" #FOR atlas cloud
             },
