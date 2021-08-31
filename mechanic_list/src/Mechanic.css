@@ -1,0 +1,38 @@
+table
+{
+    counter-reset: rowNumber;
+    
+}
+
+table tr > td:first-child
+{
+    counter-increment: rowNumber;
+}
+
+table tr td:first-child::before
+{
+    content: counter(rowNumber);
+    min-width: 1em;
+    margin-right: 0.5em;
+}
+
+table td {
+    color: white;
+}
+
+table th{
+    color: white;
+    font-weight: bold;
+}
+
+body{
+    background-color: #212529;
+}
+
+.search{
+    justify-content: right;
+}
+
+.searchoption {
+    align-content: flex-end;
+}
