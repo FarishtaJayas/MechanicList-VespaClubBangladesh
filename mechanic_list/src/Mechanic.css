@@ -36,3 +36,19 @@ body{
 .searchoption {
     align-content: flex-end;
 }
+
+.cardElements{
+    flex-direction: row;
+    justify-content: right;
+    align-content: space-between;
+    align-items: center;
+}
+.card{
+    max-width: 18rem;
+    justify-content: space-between;
+}
+
+.card-container{
+    flex-direction: row;
+    justify-content: right ;
+}

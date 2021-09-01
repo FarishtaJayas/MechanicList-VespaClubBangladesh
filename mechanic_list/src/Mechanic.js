@@ -81,7 +81,7 @@ export class Mechanic extends Component{
                 placeholder="Search Name"/>
                 
                 </div>
-
+                
                 <div className="col-auto">
                 <input className="form-control m-2" type="Search" 
                 onChange={this.changeMechanicDistrictFilter}
@@ -93,7 +93,7 @@ export class Mechanic extends Component{
                 
                
                
-                <table className="table table-striped">
+                {/* <table className="table table-striped">
                     <thead>
                         <tr>
                             
@@ -131,8 +131,28 @@ export class Mechanic extends Component{
                             </tr> )
                     }
                 </tbody>
-                </table>
+                </table> */}
+        <div className="card-container">
+                {mechanics.map((items)=> {
+                    return (
+                        <div className="cardElements">
+                        <div class="card text-light bg-danger mb-3" >
+                        <div class="card-header">{items.District}</div>
+                        <div class="card-body">
+                        <h5 class="card-title">{items.Name}</h5>
+                        <h5 class="card-title">{items.Contact}</h5>
+                        <p class="card-text">{items.Address}</p>
+                    </div>
+                </div>
             </div>
+                    );
+                    })}
+                    </div>
+            {/*Ending Div */}   
+             
+            </div>
+            
+
         )
     }
 }
