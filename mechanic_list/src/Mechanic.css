@@ -26,7 +26,7 @@ table th{
 }
 
 body{
-    background-color: #212529;
+    background-color: #313539;
 }
 
 .search{
@@ -34,6 +34,7 @@ body{
 }
 
 .searchoption {
+    
     align-content: flex-end;
 }
 
@@ -44,11 +45,18 @@ body{
     align-items: center;
 }
 .card{
+    background-color:whitesmoke ;
     max-width: 18rem;
     justify-content: space-between;
 }
 
 .card-container{
-    flex-direction: row;
-    justify-content: right ;
+    margin: auto;
+    max-width: 800px;
+}
+
+.SearchElements{
+    margin: auto;
+    max-width: 800px;
+    margin-bottom:150px;
 }

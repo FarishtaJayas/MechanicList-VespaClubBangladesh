@@ -72,23 +72,34 @@ export class Mechanic extends Component{
             mechanics 
         } = this.state;
         return(
-            <div >
+            
+            <div className="SearchElements" >
+                <div className="d-flex flex-row justify-content-center">
                 <div className="searchoption">
                 <form className="row g-3">
                 <div className="col-auto">
-                <input className="form-control m-2" type="Search" 
+                <input className="form-control m-1" type="Search" 
                 onChange={this.changeMechanicNameFilter}
                 placeholder="Search Name"/>
                 
                 </div>
                 
                 <div className="col-auto">
-                <input className="form-control m-2" type="Search" 
+                <input className="form-control m-1" type="Search" 
+                onChange={this.changeMechanicDistrictFilter}
+                placeholder="Filter Division"/>
+                </div>
+
+                <div className="col-auto">
+                <input className="form-control m-1" type="Search" 
                 onChange={this.changeMechanicDistrictFilter}
                 placeholder="Filter Division"/>
                 </div>
                 </form>
                 </div>
+                </div>
+
+                
                 
                 
                
@@ -132,11 +143,12 @@ export class Mechanic extends Component{
                     }
                 </tbody>
                 </table> */}
-        <div className="card-container">
+            <div className="card-container">
+        <div className="row row-cols-1 row-cols-md-3 g-2">
                 {mechanics.map((items)=> {
                     return (
                         <div className="cardElements">
-                        <div class="card text-light bg-danger mb-3" >
+                        <div class="card text-dark bg- mb-3" >
                         <div class="card-header">{items.District}</div>
                         <div class="card-body">
                         <h5 class="card-title">{items.Name}</h5>
@@ -147,7 +159,10 @@ export class Mechanic extends Component{
             </div>
                     );
                     })}
+                    
                     </div>
+                    </div>
+                    
             {/*Ending Div */}   
              
             </div>

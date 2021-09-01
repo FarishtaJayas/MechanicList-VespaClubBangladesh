@@ -12,23 +12,24 @@ function App() {
     <img src={logo} alt="logo" />
       <div className="navigation">
       
-      <h5 className="d-flex justify-content m-2">Vespa Club Bangladesh</h5>
+      <h4 className="d-flex justify-content-center m-2">Vespa Club Bangladesh</h4>
       
       </div>
-      <h5 className="d-flex justify-content m-2">Mechanic List</h5>
+      <h5 className="d-flex justify-content-center m-2">Mechanic List</h5>
       
-      <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
+      <nav className="navbar navbar-expand-sm bg- navbar-">
         <ul className="navbar-nav">
-          <li className="nav-item- m-1">
-            <NavLink className="btn btn-warning btn-outline-danger " to="/home">
-              Home
-            </NavLink>
-            </li>
-            <li className="nav-item- m-1">
+        <li className="nav-item- m-1">
             <NavLink className="btn btn-warning btn-outline-danger" to="/mechanic">
-              Mechanic
+              Mechanic Cards
             </NavLink>
           </li>
+          <li className="nav-item- m-1">
+            <NavLink className="btn btn-warning btn-outline-danger " to="/home">
+              Mechanic Table
+            </NavLink>
+            </li>
+            
         </ul>
       </nav>
 

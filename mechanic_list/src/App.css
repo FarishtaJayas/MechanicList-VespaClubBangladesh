@@ -1,17 +1,13 @@
 .App {
-  text-align: left;
+  text-align: center;
   
 
 }
 
-.navigation {
-  display: flex;
-  
-  align-items: left;
-}
+
 
 .App-header {
-  background-color: #282c34;
+  background-color:#313539;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,11 +31,18 @@
 }
 
 .navbar {
-  justify-content: left;
+  background-color: #313539;
+  justify-content: center;
 }
 
 img {
-  align-self: flex-start;
+  align-items: center;
   height: 150px;
   width: 100px;
+}
+
+h4 {
+  justify-content: center;
+  font-family: fantasy;
+  font-size: 50px;
 }
