@@ -68,3 +68,24 @@ input{
 .input-group {
     margin-bottom: 10px;
 }
+
+button {
+    font-size: smaller;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    
+}
+.btn {
+    font-size: 15px;
+}
+
+
+.cardElements .btn {
+    font-size: 8px;
+}
+
+.cardElements .btn:focus {
+    background-color:#157347;
+    color: white;
+} 
