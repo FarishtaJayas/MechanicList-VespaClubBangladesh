@@ -46,16 +46,25 @@ body{
 }
 .card{
     background-color:whitesmoke ;
-    max-width: 18rem;
+    max-width: 20rem;
     justify-content: space-between;
 }
 
 .card-container{
     margin: auto;
-    max-width: 800px;
+    
 }
 
 .SearchElements{
     margin: auto;
     max-width: 800px;
+}
+
+input{
+    max-width: 18rem;
+    margin: auto;
+}
+
+.input-group {
+    margin-bottom: 10px;
 }
