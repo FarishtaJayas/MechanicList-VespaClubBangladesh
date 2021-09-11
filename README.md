@@ -6,7 +6,7 @@
 - REST API 
 - BOOTSTRAP 5
 
-<img src="images/screenshot.png" height="500" width="800">
+<img src="images/screenshot.png" height="400" width="600">
 
 VCBC is primary a club companion app that enlists all the mechanics, parts vendors around bangladesh and rates them using a simple review and rating sytem.
 
